@@ -1,0 +1,57 @@
+Step-by-Step Guide to Building the User Interface (UI)
+Home Page (Dashboard)
+
+Layout: Use a simple dashboard with navigation to different sections like "Add New Test Record," "View Test Records," and "Search."
+Components:
+A navbar with links to different sections.
+A cards layout for quick navigation to key functionalities (e.g., adding new records, searching existing records).
+Bootstrap Components:
+Use Navbar and Card components.
+Include a jumbotron or hero section explaining the system's purpose.
+Add New Test Record
+
+Form Layout: A form where users can input product details and test results.
+Fields:
+Product ID (generated automatically).
+Testing ID (generated automatically).
+Product Type (dropdown).
+Type of Testing (dropdown).
+Testing Criteria (text field).
+Test Results (pass/fail radio buttons or dropdown).
+Remarks (textarea for detailed description).
+Tested By (text field for person’s name).
+Bootstrap Components:
+Use Form Groups with Labels and Input Fields.
+Use a Submit button styled with Bootstrap’s Button classes.
+PHP Logic:
+Upon submission, store the record in the MySQL database and generate the Product and Test IDs.
+View Test Records
+
+Table Layout: Display all the test records in a tabular form.
+Table Structure:
+Columns: Product ID, Testing ID, Product Type, Test Result, Tested By, Remarks, etc.
+Bootstrap Components:
+Use Tables for the data display.
+Add pagination if there are many records.
+PHP Logic:
+Fetch records from the MySQL database and display them.
+Advanced Search
+
+Search Form Layout: A form with multiple search options.
+Fields:
+Product ID (input field).
+Testing ID (input field).
+Product Type (dropdown).
+Test Status (pass/fail dropdown).
+Date Range (date picker).
+Bootstrap Components:
+Use Form Groups and Inputs for search fields.
+A Search button styled with Bootstrap’s Button classes.
+PHP Logic:
+Filter records based on the search criteria and display them.
+Product and Test Details Page
+
+Details View: When a user clicks on a record, display all the details of the product and its test results in a detailed view.
+Bootstrap Components:
+Use a Card layout for a clean, readable display of information.
+Include a Back to Search button.
